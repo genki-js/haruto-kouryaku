@@ -1,0 +1,101 @@
+/*
+ * スタイルシート: シンプルな無彩色デザイン
+ */
+
+:root {
+    /* 無彩色パレットの定義 */
+    --color-dark-bg: #0a0a0a; 
+    --color-light-text: #ffffff;
+    --color-emphasis: #cccccc; /* 強調用の明るいグレー */
+    --color-line: #333333;
+    --color-section-bg: #1e1e1e;
+}
+
+body {
+    font-family: 'Yu Gothic', 'Meiryo', 'メイリオ', 'Hiragino Sans', sans-serif;
+    background-color: var(--color-dark-bg);
+    color: var(--color-light-text);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    word-break: break-word; 
+}
+
+/* ヘッダー */
+header {
+    background-color: #000000;
+    padding: 50px 5%;
+    text-align: center;
+    border-bottom: 3px solid var(--color-emphasis);
+}
+
+header h1 {
+    color: var(--color-emphasis);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.0em;
+    color: #888888;
+    margin-top: 0;
+}
+
+/* メインコンテンツ */
+main {
+    padding: 30px 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* セクション */
+section {
+    margin-bottom: 30px;
+    padding: 20px 20px;
+    background-color: var(--color-section-bg);
+    border-radius: 4px;
+    box-shadow: none; 
+    border: 1px solid var(--color-line); 
+}
+
+/* 見出し */
+h2 {
+    color: var(--color-light-text);
+    font-size: 1.6em;
+    border-left: 4px solid var(--color-emphasis);
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* テキスト強調 */
+strong {
+    color: var(--color-emphasis);
+    font-weight: bold;
+}
+
+/* 段落 */
+p {
+    margin-bottom: 1.2em;
+    text-align: left;
+}
+
+/* まとめセクション */
+.summary {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid var(--color-emphasis);
+}
+
+.summary h2 {
+    border-left: none;
+    text-align: center;
+    padding-left: 0;
+    color: var(--color-emphasis);
+    margin-bottom: 15px;
+}
